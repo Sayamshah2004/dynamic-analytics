@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { currentUser } from "./auth/auth";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import LoginPage from "./components/Login";
@@ -23,7 +23,7 @@ function App() {
     if (savedTheme) {
       setTheme(savedTheme);
     }
-  }, []);
+  }, [setProducts]);
   useEffect(() => {
     localStorage.setItem("theme", theme);
   }, [theme]);
