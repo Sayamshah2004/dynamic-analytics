@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  font-family: cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-container{
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.text{
+    color: var(--text-color);
+
+}
+.navbar-icon{
+  cursor:pointer;
+}
+.light{
+    --background-color: #f5f7fb;
+  --text-color: #1f2937;
+  --card-bg: #ffffff;
+  --bg-button: #e4e6eb;
+}
+.dark{
+  --text-color:#d8dde1;
+  --card-bg:#1d60cd;
+  --bg-button:#dae3f1;
+}
+.body{
+  --background-color: var(--background-color);
+  --color: var(--text-color);
+}
+
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+.auth-card{
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  width: 360px;
+}
+
+.auth-btn{
+  background-color: var(--bg-button);
+}
+
+.auth-link{
+  cursor: pointer;
+}
+.sidebar{
+  width:250px;
+  z-index:1000;
+}
+
+.sidebar-container{
+  background-color: var(--card-bg);
+}
+
+.sidebar-list{
+  list-style:none;
+  cursor:pointer;
 }
